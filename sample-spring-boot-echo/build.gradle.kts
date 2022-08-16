@@ -17,10 +17,10 @@
 apply(plugin = "org.springframework.boot")
 
 dependencies {
-    implementation(platform(org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES))
-
     implementation(project(":line-bot-spring-boot"))
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("com.atilika.kuromoji:kuromoji-ipadic:0.9.0")
+    implementation("org.jsoup:jsoup:1.15.2")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
