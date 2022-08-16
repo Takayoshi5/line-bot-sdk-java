@@ -29,6 +29,21 @@ import com.linecorp.bot.model.message.TextMessage;
 import com.linecorp.bot.spring.boot.annotation.EventMapping;
 import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 
+
+//追加
+import java.io.*;
+import java.util.*;
+
+import javax.net.ssl.HttpsURLConnection;
+import java.net.*;
+import org.jsoup.*;
+
+import com.atilika.kuromoji.ipadic.Token;
+import com.atilika.kuromoji.ipadic.Tokenizer;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.*;
+//ここまで
+
 @SpringBootApplication
 @LineMessageHandler
 public class EchoApplication {
